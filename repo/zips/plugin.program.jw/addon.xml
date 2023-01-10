@@ -13,7 +13,7 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
     
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR gold]let's start something[/COLOR]</summary>
+        <summary lang="en">[I][COLOR gold]let's start something[/COLOR][/I]</summary>
         <description lang="en">[COLOR gold][/COLOR]</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
