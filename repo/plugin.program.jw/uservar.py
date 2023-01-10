@@ -99,7 +99,7 @@ REPOID = 'repository.jw'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
 REPOADDONXML = 'https://raw.githubusercontent.com/one9howard/one9howard.github.io/master/repo/repository.jw/addon.xml'
 # Url to folder zip is located in
-REPOZIPURL = 'https://github.com/one9howard/one9howard.github.io/raw/master/repo/zips/repository.jw/repository.jw-1.1.zip'
+REPOZIPURL = 'https://github.com/one9howard/one9howard.github.io/raw/master/repo/zips/repository.jw/repository.jw-1.0.zip'
 #########################################################
 
 #########################################################
