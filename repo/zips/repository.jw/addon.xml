@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.jw" name="[I][COLOR gold]the files[/COLOR][/I]" version="1.2" provider-name="jw">
+    <extension point="xbmc.addon.repository" name="the files">
+        <dir >
+            <info compressed="false">https://raw.githubusercontent.com/one9howard/one9howard.github.io/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/one9howard/one9howard.github.io/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/one9howard/one9howard.github.io/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR gold]you're officially an accomplice[/COLOR]</summary>
+        <description></description>
+        <disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
