@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.program.jw" name="[I][COLOR gold]the script[/COLOR][/I]" version="18.9" provider-name="jw">
+<addons><addon id="plugin.program.jw" name="[I][COLOR gold]the script[/COLOR][/I]" version="1.0" provider-name="jw">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.requests" />
@@ -672,7 +672,7 @@
             <screenshot>resources/art/ss/3.png</screenshot>
         </assets>
     </extension>
-</addon><addon id="repository.jw" name="[I][COLOR gold]the files[/COLOR][/I]" version="1.2" provider-name="jw">
+</addon><addon id="repository.jw" name="[I][COLOR gold]the files[/COLOR][/I]" version="1.0" provider-name="jw">
     <extension point="xbmc.addon.repository" name="the files">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/one9howard/one9howard.github.io/master/repo/zips/addons.xml</info>
