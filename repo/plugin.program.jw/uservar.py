@@ -26,7 +26,7 @@ APKFILE = 'http://'
 YOUTUBETITLE = ''
 YOUTUBEFILE = 'http://'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE = 'https://raw.githubusercontent.com/one9howard/one9howard.github.io/master/resources/text/addon.txt'
+ADDONFILE = 'https://raw.githubusercontent.com/one9howard/one9howard.github.io/master/resources/text/addons.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE = 'http://'
 #########################################################
