@@ -8,7 +8,7 @@
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>[I][COLOR gold]you're officially an accomplice[/COLOR][/I]</summary>
+        <summary>[I][COLOR gold]let's start something[/COLOR][/I]</summary>
         <description></description>
         <disclaimer lang="en">This addon simply searches websites for content. Use at your own risk!</disclaimer>
         <platform>all</platform>
