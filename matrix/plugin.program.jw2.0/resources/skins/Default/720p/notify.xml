@@ -12,7 +12,7 @@
 			<description>Image</description>
 			<width>1100</width>
 			<height>600</height>
-			<texture>blacked.png</texture>
+			<texture>blacked.jpg</texture>
 			<bordertexture border="2" colordiffuse="white">white.png</bordertexture>
 			<bordersize>10</bordersize>
 		</control>
@@ -31,7 +31,7 @@
 			<left>13</left>
 			<width>388</width>
 			<height>100</height>
-			<label>FunstersPlace</label> 			#Add your team name here
+			<label></label> 			#Add your team name here
 			<font>font60</font>
 			<align>center</align>
 			<aligny>center</aligny>
