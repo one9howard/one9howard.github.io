@@ -26,7 +26,7 @@ APKFILE = 'http://'
 YOUTUBETITLE = ''
 YOUTUBEFILE = 'http://'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE = 'https://raw.githubusercontent.com/one9howard/one9howard.github.io/master/resources/text/addons.txt'
+ADDONFILE = 'http://'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE = 'http://'
 #########################################################
@@ -74,7 +74,7 @@ THEME5 = u'[COLOR {color1}]Current Theme:[/COLOR] [COLOR {color2}]{{}}[/COLOR]'.
 
 # Message for Contact Page
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
-HIDECONTACT = 'No'
+HIDECONTACT = 'Yes'
 # You can add \n to do line breaks
 CONTACT = ''
 # Images used for the contact window.  http:// for default icon and fanart
@@ -114,7 +114,7 @@ NOTIFICATION = 'http://'
 HEADERTYPE = 'Text'
 # Font size of header
 FONTHEADER = 'Font14'
-HEADERMESSAGE = "[COLOR gold][B]the script[/B][/COLOR]"
+HEADERMESSAGE = ""
 # url to image if using Image 424x180
 HEADERIMAGE = 'http://'
 # Font for Notification Window
