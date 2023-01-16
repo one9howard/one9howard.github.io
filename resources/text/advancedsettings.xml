@@ -1,0 +1,20 @@
+<advancedsettings version="1.0">
+    <pathsubstitution>
+
+        <substitute>
+            <from>special://profile/addon_data/skin.whatever/</from>
+            <to>special://skin/extras/data/addon_data/skin.whatever/</to> <!-- Note the difference between the usage of forward and backslashes -->
+        </substitute>
+    </pathsubstitution>
+    
+    <pathsubstitution>
+
+        <substitute>
+            <from>special://profile/addon_data/script.skinshortcuts/</from>
+            <to>special://skin/extras/data/addon_data/script.skinshortcuts/</to> <!-- Note the difference between the usage of forward and backslashes -->
+        </substitute>
+
+    </pathsubstitution>
+
+    <splash>false</splash>
+</advancedsettings>
