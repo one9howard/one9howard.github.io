@@ -115,7 +115,7 @@ class BuildMenu:
             else:
                 if count18 > 0:
                     state = '+' if CONFIG.SHOW18 == 'false' else '-'
-                    directory.add_file('[B]{0} Leia Builds ({1})[/B]'.format(state, count18), {'mode': 'togglesetting', 'name': 'show18'},
+                    directory.add_file('[I]{0} Leia Builds ({1})[/I]'.format(state, count18), {'mode': 'togglesetting', 'name': 'show18'},
                                        themeit=CONFIG.THEME3)
                     if CONFIG.SHOW18 == 'true':
                         self._list_all(match, kodiv=18)
@@ -186,7 +186,7 @@ class BuildMenu:
                     '[I]Build designed for Kodi v{0} (installed: v{1})[/I]'.format(str(kodi), str(CONFIG.KODIV)),
                     fanart=fanart, icon=icon, themeit=CONFIG.THEME3)
                     
-            directory.add_separator('INSTALL')
+            directory.add_separator('Install Below')
             directory.add_file('Install', {'mode': 'install', 'action': 'build', 'name': name}, description=description, fanart=fanart,
                                icon=icon, themeit=CONFIG.THEME1)
                                
