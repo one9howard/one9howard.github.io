@@ -31,7 +31,7 @@ description="A short description of the build."
 
 name="JW_20"
 version="1.0"
-url="https://www.dropbox.com/s/do60vy2xs9n7edd/JW_20.zip?dl=1"
+url="https://www.dropbox.com/scl/fi/5gf851si0roz3i0h3m310/JW_20.zip?rlkey=zbuczucwc1lyb0xyf6b1eqx0w&st=o6ovs3l6&dl=1"
 gui="url.to.guisettings"
 kodi="20"
 theme="url.to.themes"
