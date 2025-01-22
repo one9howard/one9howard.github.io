@@ -1,26 +1,12 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
 <builds>
-<build>
-<name>JW_18</name>
-<version>1.0</version>
-<url>https://www.dropbox.com/s/e5spsv8x6hh9vn3/JW_18.1.zip?dl=1</url>
-<icon/>
-<fanart/>
-<description>created for simplicity</description>
-<preview/>
-<tweak/>
-<extra/>
-</build>
 
-<build>
-<name>JW_19</name>
-<version>1.0</version>
-<url>https://www.dropbox.com/s/1gpn8iwjyztmqx0/JW_19.zip?dl=1</url>
-<icon/>
-<fanart/>
-<description>fast and ultra reliable.</description>
-<preview/>
-<tweak/>
-<extra/>
-</build>
+  <build>
+	<name>the_build</name>
+	<version>1.0</version>
+	<url>https://www.dropbox.com/scl/fi/1auf915kdn88x73cxsund/the_build.zip?rlkey=q0h37ouzay7yuv517zrsgqupw&st=3ka0tsbu&dl=1</url>
+	<icon>https://github.com/one9howard/one9howard.github.io/blob/master/resources/img/icon.png</icon>
+	<fanart>https://github.com/one9howard/one9howard.github.io/blob/master/resources/img/fanart.jpg</fanart>
+	<description>blah blah blah</description>
+  </build>
+  
 </builds>
