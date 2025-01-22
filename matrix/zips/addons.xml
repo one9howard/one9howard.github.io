@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.program.jw" name="[I][COLOR gold]the script[/COLOR][/I]" version="2.0" provider-name="jw">
+<addons><addon id="plugin.program.jw" name="[I][COLOR gold]the script[/COLOR][/I]" version="1.0" provider-name="jw">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" optional="true" />
