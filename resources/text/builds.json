@@ -1,12 +1,12 @@
 {
 	"builds": [
 		{
-			"name": "the_next_build",
+			"name": "jw",
 			"version": "1.0",
-			"url": "https://www.dropbox.com/s/1gpn8iwjyztmqx0/JW_19.zip?dl=1",
+			"url": "https://www.dropbox.com/scl/fi/620noq0axu0mluwpbyz2r/jw_21.2.zip?rlkey=iqcrwlcz8tw4wounvbjpkg2jc&st=16yyeszm&dl=1",
 			"icon": "https://github.com/one9howard/one9howard.github.io/blob/master/resources/img/icon.png",
 			"fanart": "https://github.com/one9howard/one9howard.github.io/blob/master/resources/img/fanart.jpg",
-			"description":  "matrix v19 with a few addons."
+			"description":  "I don't know what this stuff does"
 		}
 	]
 }
