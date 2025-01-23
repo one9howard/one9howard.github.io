@@ -20,18 +20,6 @@ binaries_path = Path(xbmcvfs.translatePath(xbmcaddon.Addon().getAddonInfo('profi
 def main(name, name2, version, url):
     yesInstall = dialog.yesno(name, local_string(30028), nolabel=local_string(30029), yeslabel=local_string(30030))  # Ready to install, Cancel, Continue
     if yesInstall:
-        # Always perform fresh_start
-        fresh_start()
-        
-        # Automatically set savedebrid to true
-        setting_set('savedebrid', 'true')
-        
-        # Immediately install requests module
-        xbmc.executebuiltin('InstallAddon(script.module.requests)')
-        
-        save_backup()
-        
-        # Proceed with build install
         build_install(name, name2, version, url)
     else:
         return
@@ -40,10 +28,7 @@ def build_install(name, name2, version, url):
     if os.path.exists(zippath):
         os.unlink(zippath)
     d = Downloader(url)
-    if 'dropbox' in url:
-        d.download_build(name, zippath, meth='requests')
-    else:
-        d.download_build(name, zippath, meth='urllib')
+    d.download_build(name, zippath)
     if os.path.exists(zippath):
         dp.create(addon_name, local_string(30034))  # Extracting files
         counter = 1

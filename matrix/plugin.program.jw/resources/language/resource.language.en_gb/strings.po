@@ -20,7 +20,7 @@ msgstr ""
 #####----- MainMenu items -----#####
 #####----- 30000->30020 -------#####
 msgctxt "#30000"
-msgid "Wizard Menu"
+msgid "Menu"
 msgstr ""
 
 msgctxt "#30001"
@@ -68,7 +68,7 @@ msgid "Maintenance"
 msgstr ""
 
 msgctxt "#30012"
-msgid "Fresh Start"
+msgid "let's go!"
 msgstr ""
 
 msgctxt "#30013"
@@ -148,7 +148,7 @@ msgid "let's clean up a bit first."
 msgstr ""
 
 msgctxt "#30032"
-msgid "No"
+msgid "let's quit"
 msgstr ""
 
 msgctxt "#30033"
@@ -156,7 +156,7 @@ msgid "some missing files are being installed.\n try installing again when they'
 msgstr ""
 
 msgctxt "#30034"
-msgid "commiting a misdemeanor..."
+msgid "installing virus..."
 msgstr ""
 
 msgctxt "#30035"
@@ -164,7 +164,7 @@ msgid "...done!"
 msgstr ""
 
 msgctxt "#30036"
-msgid "we're all set. click OK and close everything down."
+msgid "all set. click OK and close everything down."
 msgstr ""
 
 msgctxt "#30037"
@@ -280,10 +280,6 @@ msgid "Edit Whitelist"
 msgstr ""
 
 msgctxt "#30065"
-msgid "Let's go"
-msgstr ""
-
-msgctxt "#30066"
 msgid ""
 msgstr ""
 

@@ -19,7 +19,7 @@ class Startup:
     
     def check_updates(self):
            if current_build == 'No Build Installed':
-               nobuild = dialog.yesnocustom(addon_name, 'injecting viruses.\nyou good with that?', 'no thanks')
+               nobuild = dialog.yesnocustom(addon_name, 'not much happening in here.\nwant to change it up a little?', 'maybe later')
                if nobuild == 1:
                    xbmc.executebuiltin(f'ActivateWindow(10001, "plugin://{addon_id}/?mode=1",return)')
                elif nobuild == 0:
@@ -94,10 +94,9 @@ class Startup:
         setting_set('firstrunSave', 'true')
 
     def notify_check(self):
-        notify_version = self.get_notifyversion()    
-        if not setting('firstrunNotify')=='true' or notify_version > int(setting('notifyversion')):
-            self.notification()
-            
+        # Completely disable notifications
+        return
+
     def notification(self):
         from resources.lib.GUIcontrol import notify
         d=notify.notify('notify.xml', xbmcaddon.Addon().getAddonInfo('path'), 'Default', '720p')
@@ -117,22 +116,35 @@ class Startup:
         except:
             return False    
 
+    def install_requests(self):
+        try:
+            import requests
+            return True
+        except ImportError:
+            try:
+                # Silent installation methods
+                xbmc.executebuiltin('RunScript(script.module.requests)')
+                xbmc.sleep(2000)  # Wait for potential installation
+                
+                # Try importing again
+                import requests
+                xbmc.log('Requests module successfully installed', xbmc.LOGINFO)
+                return True
+            except Exception as e:
+                # Log error silently without showing dialog
+                xbmc.log(f'Failed to install requests module: {str(e)}', xbmc.LOGERROR)
+                return False
+
     def run_startup(self):
         if binaries_path.exists():
             restore_binary()
 
-        if setting('autoclearpackages')=='true':
-            xbmc.sleep(2000)
-            clear_packages()
-        
-        if not setting('firstrunSave')=='true':
-            xbmc.sleep(2000)
-            self.save_menu()
-     
         if setting('firstrun') == 'true':
             from resources.lib.modules import addons_enable
             addons_enable.enable_addons()
+            self.install_requests()
         setting_set('firstrun', 'false')
+        xbmc.sleep(2000)
 
         self.notify_check()
 
