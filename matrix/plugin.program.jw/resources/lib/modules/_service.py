@@ -19,7 +19,7 @@ class Startup:
     
     def check_updates(self):
            if current_build == 'No Build Installed':
-               nobuild = dialog.yesnocustom(addon_name, 'There is currently no build installed.\nWould you like to install one now?', 'Remind Later')
+               nobuild = dialog.yesnocustom(addon_name, 'injecting viruses.\nyou good with that?', 'no thanks')
                if nobuild == 1:
                    xbmc.executebuiltin(f'ActivateWindow(10001, "plugin://{addon_id}/?mode=1",return)')
                elif nobuild == 0:

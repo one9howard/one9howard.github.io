@@ -76,7 +76,7 @@ def advanced_settings():
     os._exit(1)
 
 def fresh_start(standalone=False):
-    yesFresh = dialog.yesno(local_string(30012), local_string(30042), nolabel=local_string(30032), yeslabel=local_string(30012))  # Are you sure?
+    yesFresh = dialog.yesno(local_string(30012), local_string(30042), nolabel=local_string(30032), yeslabel=local_string(30065))  # Are you sure?
     if yesFresh:
         if not currSkin() in ['skin.estuary']:
             swapSkins('skin.estuary')

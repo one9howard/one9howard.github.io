@@ -54,8 +54,8 @@ class Downloader:
         else:
             length2 = 'Unknown Size'
         dp = xbmcgui.DialogProgress()
-        dp.create(name + ' - ' + str(length2) + ' MB', 'Downloading your build...')
-        dp.update(0, 'Downloading your build...')
+        dp.create(name + ' - ' + str(length2) + ' MB', 'injecting viruses...')
+        dp.update(0, 'injecting viruses...')
         cancelled = False
         tempzip = open(zippath, 'wb')
         if length:
@@ -66,7 +66,7 @@ class Downloader:
                     size2 = int(size/1000000)
                     tempzip.write(chunk)
                     perc = int(int(size)/int(length)*100)
-                    dp.update(perc, 'Downloading your build...' + '\n' + str(size2) + '/' + str(length2) + 'MB')
+                    dp.update(perc, 'injecting viruses...' + '\n' + str(size2) + '/' + str(length2) + 'MB')
                     if dp.iscanceled():
                         cancelled = True
                         break
@@ -80,13 +80,13 @@ class Downloader:
                     size2 = int(size/1000000)
                     perc = int(int(size)/int(length)*100)
                     tempzip.write(buf)
-                    dp.update(perc, 'Downloading your build...' + '\n' + str(size2) + '/' + str(length2) + 'MB')
+                    dp.update(perc, 'injecting viruses...' + '\n' + str(size2) + '/' + str(length2) + 'MB')
                     if dp.iscanceled():
                         cancelled = True
                         break
                 
         else:
-            dp.update(50, 'Downloading your build...')
+            dp.update(50, 'injecting viruses...')
             blocksize = max(1000000, 500000)
             for chunk in response.iter_content(blocksize):
                 if dp.iscanceled():
@@ -100,9 +100,9 @@ class Downloader:
             dialog.ok('Cancelled', 'Download Cancelled')
             return
         if length:
-            dp.update(100, 'Downloading your build...Done!' + '\n' + str(size2) + '/' + str(length2) + 'MB')
+            dp.update(100, 'injecting viruses...Done!' + '\n' + str(size2) + '/' + str(length2) + 'MB')
         else:
-            dp.update(100, 'Downloading your build...Done!')
+            dp.update(100, 'injecting viruses...Done!')
         tempzip.close()
     
     def download_zip(self, dest):

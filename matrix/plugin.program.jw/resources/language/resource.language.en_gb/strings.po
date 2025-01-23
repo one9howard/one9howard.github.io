@@ -280,6 +280,10 @@ msgid "Edit Whitelist"
 msgstr ""
 
 msgctxt "#30065"
+msgid "Let's go"
+msgstr ""
+
+msgctxt "#30066"
 msgid ""
 msgstr ""
 
