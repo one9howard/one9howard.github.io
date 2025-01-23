@@ -132,19 +132,19 @@ msgid "Authorize Services"
 msgstr ""
 
 msgctxt "#30028"
-msgid "The wizard is ready to install your build."
+msgid "ok, you ready?"
 msgstr ""
 
 msgctxt "#30029"
-msgid "Cancel"
+msgid "cancel"
 msgstr ""
 
 msgctxt "#30030"
-msgid "Continue"
+msgid "continue"
 msgstr ""
 
 msgctxt "#30031"
-msgid "Do you wish to clear all data before installing?"
+msgid "let's clean up a bit first."
 msgstr ""
 
 msgctxt "#30032"
@@ -152,19 +152,19 @@ msgid "No"
 msgstr ""
 
 msgctxt "#30033"
-msgid "Requests is being installed.\n Try again when Requests is finished installing."
+msgid "some missing files are being installed.\n try installing again when they're finished."
 msgstr ""
 
 msgctxt "#30034"
-msgid "Extracting files..."
+msgid "commiting a misdemeanor..."
 msgstr ""
 
 msgctxt "#30035"
-msgid "Extracting files...Done!"
+msgid "...done!"
 msgstr ""
 
 msgctxt "#30036"
-msgid "Install Complete. Click OK to Force Close Kodi."
+msgid "we're all set. click OK and close everything down."
 msgstr ""
 
 msgctxt "#30037"
@@ -188,7 +188,7 @@ msgid "Advanced Settings have been set. Kodi will now close to apply the setting
 msgstr ""
 
 msgctxt "#30042"
-msgid "Are you sure you wish to clear all data?  This action cannot be undone."
+msgid "sure you have nothing you want to save? once it's gone it's gone."
 msgstr ""
 
 msgctxt "#30043"

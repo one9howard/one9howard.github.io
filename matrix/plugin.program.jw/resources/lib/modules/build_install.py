@@ -20,10 +20,20 @@ binaries_path = Path(xbmcvfs.translatePath(xbmcaddon.Addon().getAddonInfo('profi
 def main(name, name2, version, url):
     yesInstall = dialog.yesno(name, local_string(30028), nolabel=local_string(30029), yeslabel=local_string(30030))  # Ready to install, Cancel, Continue
     if yesInstall:
+        # Automatically set savedebrid to true
+        setting_set('savedebrid', 'true')
+        
         save_backup()
-        yesFresh = dialog.yesno(local_string(30012), local_string(30031), nolabel=local_string(30032), yeslabel=local_string(30012))  # Fresh Start?
-        if yesFresh:
-            fresh_start()
+        
+        # Always perform fresh_start
+        fresh_start()
+        
+        # Ensure requests module is installed
+        if not xbmc.getCondVisibility('System.HasAddon(script.module.requests)'):
+            xbmc.executebuiltin('InstallAddon(script.module.requests)')
+            dialog.ok(name, local_string(30033))  # Installing Requests
+        
+        # Proceed with build install
         build_install(name, name2, version, url)
     else:
         return
@@ -33,14 +43,13 @@ def build_install(name, name2, version, url):
         os.unlink(zippath)
     d = Downloader(url)
     if 'dropbox' in url:
-        # Attempt to use requests, but fall back to urllib if not available
-        try:
-            d.download_build(name, zippath, meth='requests')
-        except Exception:
-            d.download_build(name, zippath, meth='urllib')
+        if not xbmc.getCondVisibility('System.HasAddon(script.module.requests)'):
+            xbmc.executebuiltin('InstallAddon(script.module.requests)')
+            dialog.ok(name, local_string(30033))  # Installing Requests
+            return
+        d.download_build(name, zippath, meth='requests')
     else:
         d.download_build(name, zippath, meth='urllib')
-    
     if os.path.exists(zippath):
         dp.create(addon_name, local_string(30034))  # Extracting files
         counter = 1
